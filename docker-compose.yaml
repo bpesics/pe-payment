@@ -1,0 +1,14 @@
+version: "2"
+services:
+  payment:
+    container_name: pe-payment
+    image: pe-payment:latest
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    ports:
+      - "9000:9000"
+    volumes:
+      - ./app:/app
+    environment:
+      PYTHONUNBUFFERED: 1
