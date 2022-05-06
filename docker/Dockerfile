@@ -1,4 +1,4 @@
-FROM python:3
+FROM python:3-slim
 LABEL org.opencontainers.image.source=https://github.com/bpesics/pe-payment
 ADD app/ /app
 WORKDIR /app
