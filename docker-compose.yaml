@@ -1,7 +1,6 @@
 version: "2"
 services:
   payment:
-    container_name: payment
     image: pe-payment:latest
     build:
       context: .
