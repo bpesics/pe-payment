@@ -12,11 +12,11 @@ Image available at: `ghcr.io/bpesics/pe-payment:latest`
 ## Available endpoints
 * `/health`
   ```
-  curl http://localhost:9000/health
+  curl -i http://localhost:9000/health
   ```
 * `/api/v1/charge` **POST**
   ```
-  curl -XPOST -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" http://localhost:9000/api/v1/charge
+  curl -i -XPOST -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" http://localhost:9000/api/v1/charge
   ```
 
 ## Logging

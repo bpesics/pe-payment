@@ -17,4 +17,4 @@ def charge():
         app.logger.info('json request => ' + str(request.json))
         return {"result": random.choice(['true', 'false'])}
     else:
-        return 'Content-Type not supported!'
+        return 'Content-Type not supported!', 415
